@@ -18,16 +18,19 @@ h4 {
   margin-bottom: 10px;
   color: #4e4e4e;
 }
-.container {
-  overflow: hidden;
+.row {
+  margin: 0;
 }
-
 /* Make border for navbar */
+nav {
+  justify-items: center;
+}
 .navbar {
   display: table;
   border-collapse: collapse;
   text-align: center;
   margin: 0 20% 0 20%;
+  justify-items: center;
 }
 .navbar li {
   display: table-cell;
@@ -35,7 +38,7 @@ h4 {
   border: none;
   border-right: 1px solid #c7c8c7;
   border-left: 1px solid #c7c8c7;
-  padding: 0 20px;
+  padding: 5px 20px;
   align-content: center;
 }
 /* Make text center image */
@@ -298,4 +301,10 @@ footer {
 }
 .btn-outline-warning {
   width: 200px;
+}
+
+.container,
+.container-md,
+.container-sm {
+  max-width: 100%;
 }
